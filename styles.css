@@ -1,0 +1,160 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0077cc;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Шапка сайта */
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header a {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav {
+    margin-left: 30px;
+}
+
+header nav a {
+    display: inline-block;
+    margin-left: 15px;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+header nav a:hover {
+    background-color: #0077cc;
+    color: #fff;
+}
+
+header div:last-child {
+    margin-left: auto;
+}
+
+header div:last-child a {
+    display: inline-block;
+    margin-left: 15px;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+header div:last-child a:hover {
+    background-color: #0077cc;
+    color: #fff;
+}
+
+/* Каталог товаров */
+aside {
+    background-color: #fff;
+    padding: 20px;
+    width: 200px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+aside a {
+    display: block;
+    padding: 5px 0;
+}
+
+aside a:hover {
+    color: #0077cc;
+}
+
+/* Слайдер с акциями */
+section {
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Товары и услуги */
+main {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Футер сайта */
+footer {
+    background-color: #fff;
+    padding: 20px;
+    clear: both;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+footer a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer a:hover {
+    color: #0077cc;
+}
+
+/* Медиа-запросы */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    header nav {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    header div:last-child {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    aside {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    aside a {
+        flex: 1;
+        text-align: center;
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    aside a:hover {
+        color: #0077cc;
+        background-color: #f0f0f0;
+    }
+}
